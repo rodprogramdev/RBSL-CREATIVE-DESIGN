@@ -40,18 +40,18 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    /* background:yellowgreen; */
-    background: transparent;
+    background:rgba(10, 11, 10, 0.359);
+    /* background: transparent; */
     display:flex;
     justify-content:space-between;
     align-items: center;
-    z-index:100;
+    /* z-index:100; */
 }
 
 
 
 
-.logo{
+.logo--desktop{
     position: relative;
     font-size: 35px;
     /* color: #ededed; */
@@ -61,7 +61,7 @@ body{
 
 }
 
-.logo::before{
+.logo--desktop::before{
     content: '';
     position: absolute;
     top:0;
@@ -79,13 +79,13 @@ body{
     color: #ededed;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
+    /* margin-left: 35px; */
     transition: .3s;
 }
 
 .navbar a:hover, 
 .navbar a.active{
-    color: #00abf0;
+    color: #00abf0 !important;
 
 }
 
@@ -385,3 +385,61 @@ body{
         pointer-events:auto;
     }
 }
+
+/**MEDIA QUERRIES**/
+
+/**NAV**/
+
+@media only screen and (max-width: 600px) {
+    .header{
+        background:rgba(21, 22, 21, 0.93);
+        z-index: 100;
+    }
+    
+    .logo--desktop {
+      font-size: 10px;
+    }
+
+    .home{
+        /* background:url('rod-sidhaya.jpg') no-repeat; */
+       
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 90% 120%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 0 0;
+    }
+
+    .home-content{
+        max-width: 400px;
+       position: relative;
+       top:30%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+    }
+    
+    
+.home-content h1{
+    /* position: relative; */
+    
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+
+
+    .home-sci{
+        top: 90%;
+        left: 50%;
+        transform:translate(-50%, -50%);
+        /* width: 50%; */
+
+    }
+
+
+  }
+
+
