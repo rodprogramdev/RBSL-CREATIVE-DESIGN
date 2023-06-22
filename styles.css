@@ -81,6 +81,7 @@ body{
     font-weight: 500;
     /* margin-left: 35px; */
     transition: .3s;
+    padding: 0 150% 0 0rem;
 }
 
 .navbar a:hover, 
@@ -338,7 +339,6 @@ body{
 .home-imgHover{
     position:absolute;
     top:0;
-    
     right: 87px;
     width: 500px;
     height: 100%;
@@ -395,6 +395,10 @@ body{
         background:rgba(21, 22, 21, 0.93);
         z-index: 100;
     }
+
+     .navbar a{
+       padding: 0;
+     }
     
     .logo--desktop {
       font-size: 10px;
