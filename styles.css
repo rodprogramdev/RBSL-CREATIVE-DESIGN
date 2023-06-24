@@ -92,7 +92,7 @@ body{
 
 .home{
     /* background:url('rod-sidhaya.jpg') no-repeat; */
-    background-image:linear-gradient(to right top,#020609, #007dae23),url('rod-sidhaya.jpg');
+    background-image:linear-gradient(to right top,#020609, #007dae23),url('rod-sidhaya.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 110% 20%;
